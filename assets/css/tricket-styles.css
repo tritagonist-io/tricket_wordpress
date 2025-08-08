@@ -1,0 +1,174 @@
+.tricket-productions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tricket-production,
+.tricket-screening {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.tricket-production img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tricket-notice {
+  background-color: #fff8e5;
+  border: 1px solid #ffb900;
+  border-left-width: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  margin: 20px 0;
+  padding: 12px;
+}
+
+.tricket-single-production {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tricket-single-production img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Schedule styles */
+.tricket-schedule-day {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.tricket-schedule-day:last-child {
+  border-bottom: none;
+}
+
+.tricket-schedule-date {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.tricket-schedule-production {
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tricket-schedule-production:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-color: #2c5aa0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tricket-schedule-production:focus {
+  outline: 2px solid #2c5aa0;
+  outline-offset: 2px;
+}
+
+.tricket-production-content {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.tricket-production-poster {
+  flex-shrink: 0;
+  width: 90px;
+}
+
+.tricket-production-poster img {
+  width: 100%;
+  max-width: 90px;
+  max-height: 120px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.tricket-production-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.tricket-production-title {
+  margin: 0 0 6px 0;
+  font-size: 1.1em;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.tricket-production-description {
+  margin: 0 0 10px 0;
+  color: #666;
+  line-height: 1.3;
+  font-size: 0.9em;
+}
+
+.tricket-screening-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tricket-screening-time {
+  background: #2c5aa0;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.85em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tricket-sale-ended {
+  color: #bbb;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .tricket-production-content {
+    gap: 10px;
+  }
+  
+  .tricket-production-poster {
+    width: 70px;
+  }
+  
+  .tricket-production-poster img {
+    max-width: 70px;
+    max-height: 90px;
+  }
+  
+  .tricket-production-title {
+    font-size: 1em;
+  }
+  
+  .tricket-production-description {
+    font-size: 0.85em;
+  }
+  
+  .tricket-screening-time {
+    font-size: 0.8em;
+    padding: 3px 8px;
+  }
+}

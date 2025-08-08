@@ -1,0 +1,12 @@
+Copyright Tritagonist, 2025
+
+This WordPress plugin is licensed for use exclusively with Tricket.
+
+You are granted a non-transferable, non-exclusive license to install and use this plugin solely to access services provided by Tricket, subject to the following restrictions:
+
+- You may not copy, modify, distribute, sublicense, sell, or reverse-engineer this plugin.
+- You may not use this plugin to connect to services other than Tricket.
+- This plugin is provided "as-is" without warranties of any kind.
+- All rights not expressly granted are reserved.
+
+By installing or using this plugin, you agree to these terms.
